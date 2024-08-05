@@ -1,0 +1,59 @@
+/* Container for the category list */
+.category-list {
+padding-top: 130px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distributes space between items */
+  gap: 20px;
+ 
+  background: radial-gradient(circle, #f0f0f0, #ffffff);
+  overflow-x: auto; /* Allows horizontal scrolling if needed */
+}
+
+/* Styling for each category box */
+.category-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px; /* Set a fixed width for the category boxes */
+  border-radius: 15px;
+  overflow: hidden;
+  background: linear-gradient(145deg, #ffffff, #f5f5f5);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the category images */
+.category-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover; /* Ensures images cover the box without distortion */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.category-image:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
+}
+
+/* Container for the category information */
+.category-info {
+  padding: 16px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+}
+
+/* Styling for the category name */
+.category-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
